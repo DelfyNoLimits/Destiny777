@@ -23,7 +23,7 @@ public class PersonaController {
     public Persona getPersonaById(@PathVariable Long id) {
         return personaRepository.findById(id).orElse(null);
     }
-
+//suki
     @PostMapping
     public Persona createPersona(@RequestBody Persona persona) {
         return personaRepository.save(persona);
